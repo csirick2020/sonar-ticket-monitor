@@ -7,6 +7,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
+
 def test_endpoint():
     load_dotenv()  # This loads variables from .env into the environment
 
@@ -47,5 +48,9 @@ def test_endpoint():
         print(f"Other error occurred: {err}")
 
 
-if __name__ == "__main__":
+def main():
     test_endpoint()
+
+
+if __name__ == "__main__":
+    main()

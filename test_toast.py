@@ -3,6 +3,7 @@
 
 from win10toast import ToastNotifier
 
+
 def show_notification():
     toaster = ToastNotifier()
     toaster.show_toast("Test Notification", "This is a test notification", duration=10)
@@ -13,5 +14,9 @@ def show_notification():
         return 1
 
 
-if __name__ == "__main__":
+def main():
     show_notification()
+
+
+if __name__ == "__main__":
+    main()
