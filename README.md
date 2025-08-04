@@ -61,7 +61,7 @@ A terminal-based ticket monitor that integrates with [Sonar](https://sonar.softw
    Start the script from the terminal:
 
    ```bash
-   python Sonar_ticket_monitor.py
+   python src/Sonar_ticket_monitor.py
    ```
 
 ---
