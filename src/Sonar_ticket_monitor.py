@@ -113,13 +113,10 @@ def initialize_seen_tickets():
     tickets_open = get_tickets(query_open)
     tickets_pending_internal = get_tickets(query_pending_internal)
     all_tickets = tickets_open + tickets_pending_internal
-    len_all_tickets_wrong = len(all_tickets)
-    # For off by one error...(Not sure why we have to subtract 2, but subtract by 1 does not fix)
-    len_all_tickets = len(all_tickets) - 2
     for ticket in all_tickets:
         seen_ticket_ids.add(ticket['id'])
     print()
-    print(f"Initialization complete: {len_all_tickets} tickets currently in 'Helpdesk'")
+    print(f"Initialization complete: {len(all_tickets)} tickets currently in 'Helpdesk'")
 
 
 # Main loop to check for new tickets
